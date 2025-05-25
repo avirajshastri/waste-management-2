@@ -16,7 +16,7 @@ export default function RegisterPage() {
       password: "",
       phoneNumber: "",
       confirmPassword: "",
-      role: "User",
+      role: "user",
     })
     const [error,setError] = useState("")
 
@@ -24,7 +24,8 @@ export default function RegisterPage() {
       e.preventDefault()
       // console.log(e.target.value)
       setRole(e.target.value);
-      user.role = role
+      user.role = e.target.value
+      console.log(user.role);
     }
 
     const handleSubmit = async (e:any) =>{

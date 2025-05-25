@@ -30,6 +30,10 @@ const userSchema = new mongoose.Schema({
         type:Boolean,
         default:false,
     },
+    creditPoints:{
+        type: Number,
+        default: 0
+    },
     forgotPasswordToken : String,
     forgotPasswordTokenExpiry: Date,
     verifyToken: String,

@@ -25,7 +25,10 @@ export default function Login() {
       console.log("idhar aaaya")
       const response = await axios.post("/api/users/login",user)
       console.log("Login successfull", response.data)
-      router.push("/profile")
+      if(response.data.role === 'User')
+        router.push("/user/request")
+      else
+        router.push("/collector/request")
     } catch (error:any) {
       console.log("Error in login")
       toast.error(error.message)
