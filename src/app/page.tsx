@@ -66,12 +66,12 @@ export default function Home() {
           placeholder="What's on your mind?"
           className="w-full min-h-[120px] p-4 border-2 border-gray-200 text-base rounded-lg focus:outline-none"
         ></textarea>
-        <div className="flex items-start gap-2">
+        {/* <div className="flex items-start gap-2">
           <input type="checkbox" id="consent" />
           <label htmlFor="consent" className="text-gray-500 text-sm">
             Turpis blandit massa interdum quam amet.
           </label>
-        </div>
+        </div> */}
         <button
           type="submit"
           className="w-full  bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded-full text-lg"
@@ -85,13 +85,12 @@ export default function Home() {
     <div className="max-md:hidden w-full md:w-1/3 bg-sky-100 flex flex-col justify-center items-center p-8 text-center">
       <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
       <p className="text-gray-700 mb-6 max-w-xs">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis diam lectus sapien.
+        Contact us on our social media handles.
       </p>
       <div className="flex space-x-4">
-        <a href="#"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png" className="w-5 h-5" alt="Twitter" /></a>
-        <a href="#"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png" className="w-5 h-5" alt="Facebook" /></a>
-        <a href="#"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png" className="w-5 h-5" alt="Google" /></a>
-        <a href="#"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" className="w-5 h-5" alt="Instagram" /></a>
+        <a href="https://x.com/"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png" className="w-5 h-5" alt="Twitter" /></a>
+        <a href="https://www.facebook.com/"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png" className="w-5 h-5" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" className="w-5 h-5" alt="Instagram" /></a>
       </div>
     </div>
   </div>
