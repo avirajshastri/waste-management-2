@@ -1,4 +1,4 @@
-
+"use client"
 import React,{useState,useEffect} from "react"
 import { Suspense } from "react";
 import axios from 'axios'
@@ -7,7 +7,7 @@ import { div, h1 } from "framer-motion/client";
 import { useRouter } from "next/navigation";
 
  function ForgotPasswordContent(){
-    "use client"
+    
     const searchParams = useSearchParams()
     const token = searchParams.get('token')
     const router = useRouter()
