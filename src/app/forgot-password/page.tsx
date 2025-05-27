@@ -1,12 +1,13 @@
-"use client"
+
 import React,{useState,useEffect} from "react"
+import { Suspense } from "react";
 import axios from 'axios'
 import { useSearchParams } from 'next/navigation';
 import { div, h1 } from "framer-motion/client";
 import { useRouter } from "next/navigation";
 
-
-export default function ForgotPasswordPage(){
+ function ForgotPasswordContent(){
+    "use client"
     const searchParams = useSearchParams()
     const token = searchParams.get('token')
     const router = useRouter()
@@ -72,4 +73,12 @@ export default function ForgotPasswordPage(){
              <button onClick={handleForgotPassword} className="mb-4 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600">Send</button>
         </div>
     )
+}
+
+export default function ForgotPasswordPage() {
+  return (
+    <Suspense>
+      <ForgotPasswordContent />
+    </Suspense>
+  );
 }
